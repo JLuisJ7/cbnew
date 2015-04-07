@@ -146,3 +146,30 @@ footer{
 }
 
 .mb{margin-bottom: 1em;}
+/*Fin home */
+
+
+/*------------------------------*/
+  /*  HEADER*/
+/*-------------------------------*/
+
+.menu{
+  list-style: none;
+}
+
+.menu li{
+  display: inline-block;
+}
+
+.icon-bar{
+  background-color: black;
+}
+
+.navbar-nav li a{
+  color:#319BD8;
+}
+.navbar-nav li a:hover{
+  color:#999;
+  background: white;
+  border-bottom: 1px solid #999;
+}
