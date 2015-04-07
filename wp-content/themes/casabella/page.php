@@ -54,12 +54,35 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             	<?php wp_nav_menu(array('theme_location' => 'menu','menu_id' => 'menu', 'menu_class' => 'eleven columns','container' => '','items_wrap'      => '<ul class="nav navbar-nav">%3$s</ul>',)); ?>
             	
-                
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+
+    <div class="container">
+    	<div class="row">
+	    	<div class="col-md-12 center">
+	    		<div class="btn-group">
+					<button class="btn btn-default" style="width:200px;">Search Hotel
+					</button>
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<span class="glyphicon glyphicon-chevron-down"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<a href="http://www.casabellaperu.net/miraflores/">Casa Bella San Miraflores</a>
+						</li>
+						<li>
+							<a href="http://www.casabellaperu.net/grand-reserve/">Casa Bella Miraflores Grand Reserve</a>
+						</li>
+					</ul>
+				</div>
+	    	</div>
+	    </div>
+    </div>	
+    
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

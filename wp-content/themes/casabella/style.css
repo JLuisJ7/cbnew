@@ -100,11 +100,13 @@ body{
 
 footer{
     padding-top: 1.1em;
+      padding-bottom: 1.5em;
   background-color: #F6F6F6;
 }
 
 .menu-footer{
   list-style: none;
+   margin-left:0; 
 
 }
 .menu-footer li{
@@ -119,8 +121,12 @@ footer{
 .menu-footer li a{
   color: #BBBBBB;
   font-size: 12px;
-}
 
+}
+.menu-footer li a:hover{
+  text-decoration: underline;
+
+}
 .info{
   font-size: 12px;
 }
@@ -145,7 +151,7 @@ footer{
   margin-bottom: 1.5em;
 }
 
-.mb{margin-bottom: 1em;}
+
 /*Fin home */
 
 
@@ -173,3 +179,13 @@ footer{
   background: white;
   border-bottom: 1px solid #999;
 }
+
+.dropdown-menu>li>a{
+white-space: pre-wrap;
+}
+
+.font-12{
+  font-size: 12px;
+}
+
+
