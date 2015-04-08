@@ -187,10 +187,14 @@ white-space: pre-wrap;
 .font-12{
   font-size: 12px;
 }
+.font-10{
+  font-size: 12px;
+}
 
 .bread{
     background: #F9F9F9;
   border-top: 1em solid #F2F3F7;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 .bread h1{
@@ -216,4 +220,53 @@ white-space: pre-wrap;
   font-weight: 100;
   text-shadow: 0 1px 1px #FFFFFF;
   font-size: 1.2em;
+}
+.widgettitle {
+  color: #44799B;
+  font: normal 1.2em Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+.textwidget {
+  font-size: 10px;
+  text-transform: none;
+  padding-right: 15px;
+  line-height: 20px;
+  color: #666666;
+}
+.textwidget span{
+  margin-bottom: 1em;
+}
+
+.dots {
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 0;
+  color: #999;
+  border-bottom: #CCC dotted 1px;
+}
+
+.border-top{
+   border-top: 1px solid #d8d8d8;
+} 
+
+.panel{
+  margin-bottom: 0;
+}
+
+.first-child button{color:#000000;}
+.text-content p{
+  font-size: 12px;
+}
+
+a{
+  font-size: 12px;
+    font-weight: normal;
+}
+.text-content  a:hover{
+  text-decoration: underline;
+}
+td{
+  font-size: 12px;
 }

@@ -5256,7 +5256,9 @@ table {
   table tbody tr td,
   table tr td {
     display: table-cell;
-    line-height: 1.125rem; }
+    line-height: 1.125rem; 
+  font-size: 12px;
+  }
 
 .range-slider {
   position: relative;
