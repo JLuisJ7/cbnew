@@ -16,6 +16,19 @@ array(
 add_action( 'init', 'register_my_menu' );
 
 
+//*******************************
+
+if ( function_exists('register_sidebars') )
+register_sidebar(array(
+'name' => 'sidebar-noticias',
+'before_widget' => '<div class="homenoticias">',
+'after_widget' => '</div>',
+));
+
+register_sidebars(3, array(
+'before_widget' => '<div class="widget">',
+'after_widget' => '</div><!--/widget-->',
+));
 
 //*******************************
 
