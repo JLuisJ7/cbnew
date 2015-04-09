@@ -292,3 +292,15 @@ td{
 .gris{
   color: #999;
 }
+
+.botones{
+  padding: 1em;
+  border: 1px solid #000000;
+  background-color: ;
+  text-align: center;
+}
+
+.botones a,.botones span{
+  font-weight: bold;
+  font-size: 2em;
+}
