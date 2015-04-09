@@ -21,19 +21,25 @@
 <div class="container bg-datos">
     <div class="row bg-datos">
   <div class="small-12 columns datos">
-    <p>
-        Boutique Hotels Lima Perú - Av. De La Aviación 565 Miraflores Lima - Perú Teléfono: (511) 421-7354 - (511) 421 a 1.033 - En EE.UU.: (720) 648-3451
+    <p style="display:inline-block!important;">
+        <span class="hide-for-small" >Boutique Hotels Lima Perú - Av. De La Aviación 565 Miraflores Lima - Perú Teléfono: (511) 421-7354 - (511) 421 a 1.033 - En EE.UU.: (720) 648-3451</span>
        <span class="flags"><a href="http://www.casabellaperu.net/casabella-es">
         <img src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/icons/spanish.gif" width="16" height="11" alt="spanish" /></a> <a href="http://www.casabellaperu.net/"><img src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/icons/english.gif" width="16" height="11" alt="english" /></a> <a href="http://www.peru.o-kom.info/casabellaperu/" target="_self"><img src="http://www.casabellaperu.net//wp-content/themes/casaweb/images/icons/german.gif" width="16" height="11" alt="german" /></a></span>
      </p>
   </div>
  
 </div>
+</div>
+  <div class="row ">
+    <div class="small-12 columns">
+      <h1>
+        <a class="navbar-brand"  href="<?php echo get_option('home'); ?>">
+          <img src="http://www.casabellaperu.net/images/logo.png" alt="lima peru hotels"/>
+        </a>
+      </h1>
+    </div>
   </div>
-  <h1 class="center"><a class="navbar-brand"  href="<?php echo get_option('home'); ?>">
-        <img src="http://www.casabellaperu.net/images/logo.png" alt="lima peru hotels"/>
-      </a>
-    </h1>
+  
 
   <div class="contain-to-grid">
 <nav class="top-bar" data-topbar role="navigation">
@@ -82,8 +88,8 @@
     </div>
 
   <div class="row">
-    <div class="small-12 medium-4 large-4 columns panel">
-      <div id="left" class="hide-for-small">
+    <div class="small-12 medium-4 large-4 columns panel hide-for-small">
+      <div id="left" class="">
 
   <div class="gcBookingGadget vertical"></div>
 
@@ -217,7 +223,7 @@
 </div>
     </div>
     <div class="small-12 medium-8 large-8 columns text-content">
-      <div class="dots"></div>
+      
       <?php if(have_posts()) : while(have_posts()) : the_post(); ?> 
 <?php the_content(); ?>
 <?php endwhile; ?> 
@@ -225,10 +231,11 @@
 <p>There are no posts to display. Try using the search.</p> 
 <?php endif; ?>
     </div>
+      
   </div>
 
    <div class="border-top">
-     <div class="row" style=" padding: 2em; margin-top: 1.5em;">
+     <div class="row hide-for-small" style=" padding: 2em; margin-top: 1.5em;">
             
               <div class="small-12 small-centered columns">
                 
@@ -250,60 +257,35 @@
                   <img width="84" height="38" border="0" alt="El Tiempo Lima-Callao / Aerop. Internacional Jorgechavez" src="http://www.tutiempo.net/imagenes_asociados/84x38/SPIM.png" style="" class="mb">
                 </a></li>
      </ul>
-                
-                
-                
             
      
-              </div>         
+              </div>  
+             <div class="small-6 medium-6 large-2 small-centered columns center">
+        <img width="110" height="65" border="0" alt="marca peru" src="http://www.casabellaperu.net/images/marca-peru.jpg">
+      </div>        
         </div>
    </div>
 
-      <div class="row" style="  margin-bottom: 1.5em;">
-        <div class="small-6 medium-6 large-2 small-centered columns center">
-        <img width="110" height="65" border="0" alt="marca peru" src="http://www.casabellaperu.net/images/marca-peru.jpg">
-      </div>
-      </div>
+     
 <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="small-11 small-centered columns">
-              <ul class="menu-footer">
-
-            <li><div id="">Casa Bella</div></li> 
-
-
-                <li><a href="http://www.casabellaperu.net/sanisidro">Home</a></li>
-
-                <li><a href="http://www.casabellaperu.net/about-us/">About Us</a></li>
-
-                <li><a href="http://www.casabellaperu.net/services/">Services</a></li>
-
-                <li><a href="http://www.casabellaperu.net/tours/">Tours</a></li>
-
-            </ul>
+          <div class="row center">
+            <div class="small-12 columns">
+                <?php wp_nav_menu(array('theme_location' => 'menu-footer','menu_id' => 'menu', 'menu_class' => 'eleven columns','container' => '','items_wrap'      => '<ul id="menu-footer-navigation" class="menu-footer">%3$s</ul>',)); ?>
+            </div>
+            <div class="small-12 columns">             
+              <p class="gris font-12">Phone: (511) 421-7354 - (511) 421-1033 In USA: (720) 648-3451</p>
+            </div>
+            <div class="small-12 columns">
+              <p class="gris font-12">&copy; <?php bloginfo('name'); ?> | Todos los Derechos Reservados.</p>
             </div>
           </div>
-          <div class="row">
-            <div class="small-11 small-centered columns">
-              <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 font-12">
-              <li><span class="bold">San Isidro Phone:</span> (511) 421-7354 - (511) 421-1033 In USA: (720) 648-3451</li>
-              <li><span class="bold">Miraflores Phone:</span> +511 241-1446 – +511 241-8825 In USA: (720) 648-3451</li>
-            </ul>
-              
-            </div>
-          </div>
+          
+          
             
           </div> 
-          <div class="row center ">
-            <div class="small-12 columns bold font-12">
-              © Casa Bella Lima Peru Hotels | All Rights Reserved.
-            </div>
-            <div class="small-12 columns developer">
-              <a href="http://www.tres.pe/" title="marketing digital en peru">Marketing Digital</a> por TresMedia
-            </div>
-          </div>
-        </div>
+      
+     
       </footer>
 
 
