@@ -197,6 +197,16 @@ footer{
   text-shadow: 0 1px 1px #FFFFFF;
   font-size: 1.2em;
 }
+
+.titparrafo{
+padding-top: .8em;
+  color: #999;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 100;
+  text-shadow: 0 1px 1px #FFFFFF;
+  font-size: .9em;
+}
 .widgettitle {
   color: #44799B;
   font: normal 1.2em Arial, Helvetica, sans-serif;

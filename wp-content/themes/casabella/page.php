@@ -75,9 +75,9 @@
     <div class="bread">
       <div class="row">
         <div class="small-12 columns">
-          <h2 class="titpagina"><?php the_title(); ?></h2>
+          <h2 class="titpagina left"><?php the_title(); ?></h2>
           <?php if (get_post_meta($post->ID, 'intro_message', true)) { ?> 
-          <p class="titparrafo">
+          <p class="titparrafo right">
           <?php echo get_post_meta($post->ID, 'intro_message', true); ?>
           </p>
           <?php } ?>
