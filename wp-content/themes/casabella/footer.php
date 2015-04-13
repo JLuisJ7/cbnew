@@ -39,10 +39,10 @@
                 <?php wp_nav_menu(array('theme_location' => 'menu-footer','menu_id' => 'menu', 'menu_class' => 'eleven columns','container' => '','items_wrap'      => '<ul id="menu-footer-navigation" class="menu-footer">%3$s</ul>',)); ?>
             </div>
             <div class="small-12 columns">             
-              <p class="gris font-12">Phone: (511) 421-7354 - (511) 421-1033 In USA: (720) 648-3451</p>
+              <p class="gris font-12 mb_0">Phone: (511) 421-7354 - (511) 421-1033 In USA: (720) 648-3451</p>
             </div>
             <div class="small-12 columns">
-              <p class="gris font-12">&copy; <?php bloginfo('name'); ?> | Todos los Derechos Reservados.</p>
+              <p class="gris font-12 mb_0">&copy; <?php bloginfo('name'); ?> | Todos los Derechos Reservados.</p>
             </div>
           </div>
           

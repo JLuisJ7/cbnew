@@ -52,6 +52,17 @@ h6 a{
     font-weight: normal;
     color: #319BD8;
 }
+h3{
+
+  font-size: 19px;
+  color: #62727D;
+
+  font-weight: bold;
+
+}
+
+
+
 .center{
   text-align: center;
 }
@@ -223,11 +234,12 @@ padding-top: .8em;
   text-shadow: 0 1px 1px #FFFFFF;
   font-size: .9em;
 }
+
 .widgettitle {
-  color: #44799B;
-  font: normal 1.2em Arial, Helvetica, sans-serif;
+  color: #44799B!important;
+  font: normal 14px Arial, Helvetica, sans-serif;
   text-transform: capitalize;
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 1px #E7E7E7!important;
   margin-bottom: 8px;
   padding-bottom: 4px;
 }
@@ -237,6 +249,10 @@ padding-top: .8em;
   padding-right: 15px;
   line-height: 20px;
   color: #666666;
+}
+
+#left ul{
+    margin-left: 2.1rem;
 }
 .textwidget span{
   margin-bottom: 1em;
@@ -260,9 +276,32 @@ padding-top: .8em;
 .first-child button{color:#000000;}
 .text-content{
   padding: 2em;
+ 
+}
+.text-content h2{
+
+  font-size: 19px;
+  color: #62727D;
+
+  font-weight: bold;
+
+
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: dotted #ddd 1px;
 }
 .text-content p{
   font-size: 12px;
+}
+.text-content ul{
+  margin-left: 3.1rem;
+}
+.text-content ul li {
+  list-style-image: url(images/check.png);
+   
+    font-weight: bold;
+    font-size: 12px;
+
 }
 
 a {
@@ -274,6 +313,7 @@ a {
 .text-content  a:hover{
   text-decoration: underline;
 }
+
 td{
   font-size: 12px;
 }
@@ -441,4 +481,8 @@ margin-left:0;
 .alignleft {
   float: left;
   padding: 0px 15px 10px 0px;
+}
+
+.mb_0{
+  margin-bottom: 0;
 }
