@@ -46,6 +46,13 @@ p{
   line-height: 22px;
   margin-top: 0px;
 }
+h6 {
+  font-size: 28px;
+  margin: 0px 0px 0px 0px;
+  font-weight: normal;
+  color: #347BA2;
+}
+
 h6 a{
     font-size: 28px;
     margin: 0px 0px 0px 0px;
@@ -485,4 +492,126 @@ margin-left:0;
 
 .mb_0{
   margin-bottom: 0;
+}
+
+#subnav{
+  margin-left: 1.1rem!important;
+}
+#subnav li {
+  border-top: solid 1px #f0f0f0;
+  border-bottom: solid 1px #f0f0f0;
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 3px 0 3px 30px;
+  margin-bottom: -1px;
+  background: url(images/arrow/sub-arrow.png) no-repeat;
+}
+
+#subnav li:hover {
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  list-style-type: none;
+  margin-left: 0px;
+  background: url(images/arrow/nav_hover.png) no-repeat;
+  background-color: white;
+  display: block;
+}
+
+.archive_sidebar   h2 {
+  color: #CC6600!important;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+  text-transform: uppercase;
+}
+
+.archive_sidebar #subnav{ margin-left: 0!important;}
+.search_content{
+  padding-left: 0 ;
+}
+
+#posts_navigation a{
+  padding: 1em;
+  color: #FFFFFF;
+  background: #008CBA;
+}
+
+
+.home-sanisidro img, .home-miraflores img{
+  border: 10px solid #ececec;
+}
+
+.home-sanisidro h1 , .home-miraflores h1 {
+  font-size: 0.75rem;
+  text-align: center;
+}
+.home-sanisidro h1 a, .home-miraflores h1 a{
+  font-size: 20px;
+}
+
+.home-sanisidro p, .home-miraflores p{
+  text-align: justify;
+  font-size: 12px;
+  line-height: 22px;
+    color: rgb(170, 170, 170);
+}
+
+.image_miraflores img{
+  text-align: right;
+  border: 10px solid #ececec;
+}
+.image_sanisidro img{
+  text-align: left;
+  border: 10px solid #ececec;
+}
+
+/*
+.contain-to-grid{
+  background-color: white;
+}
+
+
+.top-bar-section ul li > a{
+  color:#319BD8;
+}
+.top-bar-section ul li > a:hover{
+  color:#B6B6B6;
+}
+
+@media only screen and (min-width: 52em){
+.top-bar {
+  background: #FFFFFF;
+  overflow: visible;
+}
+}
+@media only screen and (min-width: 52em){
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 0.9375rem;
+    line-height: 2.8125rem;
+    background: #FFFFFF;
+  }
+}
+@media only screen and (min-width: 52em){
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    color: #BBBBBB;
+    background-color: white;
+
+   
+  }
+}
+
+@media only screen and (min-width: 52em){
+  .top-bar-section .has-dropdown > a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-top-style: solid;
+    border-color:#319BD8 transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -2.5px;
+    top: 1.40625rem;
+  }
 }
