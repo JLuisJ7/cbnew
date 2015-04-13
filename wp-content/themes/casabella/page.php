@@ -26,6 +26,10 @@
       <?php else: ?> 
       <p>There are no posts to display. Try using the search.</p> 
       <?php endif; ?>
+      <!-- start the comments  -->
+      <div id="comments_template"> 
+      <?php comments_template(); ?> 
+      </div>  
     </div>      
   </div>
 <?php get_footer(); ?>

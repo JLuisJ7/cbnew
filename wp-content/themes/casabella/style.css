@@ -402,7 +402,9 @@ margin-left:0;
 
 .portfolio_featured_cell{
   background-color:rgb(246, 245, 240);
-    padding: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  outline-offset: -5px;
+  outline: 1px solid #CCC;
 
 
 }
@@ -428,4 +430,15 @@ margin-left:0;
 
 .row .row {
     margin-left: 0; 
+}
+
+.alignright {
+  float: right;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.alignleft {
+  float: left;
+  padding: 0px 15px 10px 0px;
 }

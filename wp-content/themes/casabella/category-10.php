@@ -18,6 +18,7 @@ Template Name: Proyects
 	      <?php get_sidebar(); ?>
 	    </div>
 	    <div class="small-12 medium-8 large-8 columns text-content">
+        
 	    	<?php include("featured.php"); ?>
 	    	<div style="clear: both;">&nbsp;</div>
 <!-- start loop -->
