@@ -48,7 +48,7 @@ Template Name: Home Page
 
 	</div>
 </div>
-<div class="row">
+<div class="row site_home_content">
 	<div class="small-12  medium-12 large-4 columns">
 		<?php 
 			query_posts('showposts=1&page_id='.get_option('aboutid')); 

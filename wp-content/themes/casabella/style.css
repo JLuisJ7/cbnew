@@ -35,9 +35,9 @@ Tags: hotel, theme, template
 body{
   font-size: 16px;
 }
-a:hover{
+/*a:hover{
   text-decoration: underline;
-}
+}*/
   
 
 p{
@@ -566,7 +566,7 @@ margin-left:0;
   border: 10px solid #ececec;
 }
 
-/*
+
 .contain-to-grid{
   background-color: white;
 }
@@ -603,15 +603,89 @@ margin-left:0;
 
 @media only screen and (min-width: 52em){
   .top-bar-section .has-dropdown > a:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 5px;
-    border-top-style: solid;
+    
     border-color:#319BD8 transparent transparent transparent;
-    border-top-style: solid;
-    margin-top: -2.5px;
-    top: 1.40625rem;
+
   }
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+
+  color: #08c;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+  
+  box-shadow: 0 0 0 1px #08c, 0 7px 0 1px #08c, 0 14px 0 1px #08c;
+}
+
+.top-bar {
+
+  background: #FFFFFF;
+}
+
+.top-bar.expanded .title-area {
+  background: #FFFFFF;
+  border-bottom: 1px solid;
+}
+
+.top-bar-section ul li {
+  background: #FFFFFF;
+}
+
+.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
+  color: #000000;
+ 
+}
+
+.top-bar-section ul li:hover {
+  background: #08c;
+}
+
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background: #08c;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 52em){
+  .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    color: #000000;
+    background: #FFFFFF;
+  }
+}
+
+@media only screen and (max-width: 830px){
+  .top-bar-section ul li {
+  border-bottom:1px solid;
+}
+.top-bar-section .has-dropdown > a:after {  
+  border-color: transparent transparent transparent rgba(0, 0, 0, 1);
+
+}
+}
+@media only screen and (min-width: 830px){
+  .top-bar-section ul li {
+  border-bottom:1px solid;
+}
+.top-bar-section .has-dropdown > a:after {  
+  border-color: transparent transparent transparent rgba(0, 0, 0, 1);
+
+}
+}
+
+top-bar
+
+
+@media only screen and (min-width: 52em){
+  .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    background: #08c;
+  }
+}
+
+
+.site_home_content a:hover{
+text-decoration: underline;
 }
