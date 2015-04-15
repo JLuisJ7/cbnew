@@ -1,31 +1,10 @@
 /*
-
-
-
-Theme Name: Casa Bella
-
-
-
-Theme URI: http://www.3bcorp.com
-
-
-
+Theme Name: Casa Bella Response
+Theme URI:
 Description: Casa Bella
-
-
-
 Version: 1.0
-
-
-
-Author: 3B
-
-
-
+Author:
 Tags: hotel, theme, template
-
-
-
 */
 
 * {
@@ -479,7 +458,7 @@ margin-left:0;
     margin-left: 0; 
 }
 
-.alignright {
+/*.alignright {
   float: right;
   padding-left: 10px;
   margin-left: 10px;
@@ -489,7 +468,7 @@ margin-left:0;
   float: left;
   padding: 0px 15px 10px 0px;
 }
-
+*/
 .mb_0{
   margin-bottom: 0;
 }
@@ -517,7 +496,7 @@ margin-left:0;
   display: block;
 }
 
-.archive_sidebar   h2 {
+.archive_sidebar   h2,.search_sidebar h2 {
   color: #CC6600!important;
   font-size: 14px;
   font-weight: normal;
@@ -626,7 +605,7 @@ margin-left:0;
 
 .top-bar.expanded .title-area {
   background: #FFFFFF;
-  border-bottom: 1px solid;
+
 }
 
 .top-bar-section ul li {
@@ -657,24 +636,31 @@ margin-left:0;
 
 @media only screen and (max-width: 830px){
   .top-bar-section ul li {
-  border-bottom:1px solid;
-}
-.top-bar-section .has-dropdown > a:after {  
-  border-color: transparent transparent transparent rgba(0, 0, 0, 1);
+    border-bottom:1px solid;
+  }
+  .top-bar-section .has-dropdown > a:after {  
+    border-color: transparent transparent transparent rgba(0, 0, 0, 1);
 
+  }
+  .top-bar.expanded .title-area {
+
+  border-bottom: 1px solid black;
 }
 }
 @media only screen and (min-width: 830px){
   .top-bar-section ul li {
-  border-bottom:1px solid;
+   
+  }
+  .top-bar-section .has-dropdown > a:after {  
+    border-color: rgba(0, 0, 0, 1) transparent transparent transparent ;
+  }
+ 
 }
-.top-bar-section .has-dropdown > a:after {  
-  border-color: transparent transparent transparent rgba(0, 0, 0, 1);
 
-}
+.dropdown li{
+  border-bottom: 1px solid 
 }
 
-top-bar
 
 
 @media only screen and (min-width: 52em){
@@ -688,4 +674,59 @@ top-bar
 
 .site_home_content a:hover{
 text-decoration: underline;
+}
+
+.cinta_room_featured{
+  position: absolute;
+  top: 0;
+  right: -10px;
+
+  text-shadow:1px 1px 5px rgba(0, 0, 0, 1);
+  color: #FFFFFF;
+  width: 180px;
+  text-align: center;
+  padding:6px;
+
+  background: #84D2E8 ; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #84D2E8  6%, #2c77b0 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(6%,#84D2E8 ), color-stop(100%,#2c77b0)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #84D2E8  6%,#2c77b0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #84D2E8  6%,#2c77b0 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #84D2E8  6%,#2c77b0 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #84D2E8  6%,#2c77b0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84D2E8 ', endColorstr='#2c77b0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
+}
+.cinta_room_featured:after {
+  right: 0;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #000000;
+    display: block;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  top: 35px;
+}
+  
+#sitemap_list li{
+  list-style-image:none!important;
+}
+
+/* GALERY */
+#gallery-1 .gallery-caption {
+  font-size: 12px;
+}
+
+
+/*Sitemap*/
+
+#sitemap_list .home-item a, #sitemap_list .cat-item a ,#sitemap_list  .page_item a{
+  font-size: 16px!important;
+}
+
+#sitemap_list .post-item a{
+  font-size: 12px!important;
 }

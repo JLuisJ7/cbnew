@@ -13,6 +13,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slider.css" type="text/css">
 <?php wp_head(); ?>
 </head>
 <body>

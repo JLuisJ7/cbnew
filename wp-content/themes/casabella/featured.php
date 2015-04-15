@@ -3,7 +3,7 @@
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
-<div class="row portfolio_featured_cell">
+<div class="row portfolio_featured_cell" style="position:relative;">
 	<div class="small-12 large-5 columns">
 		<div class="portfolio_featured_image">					
 			<!-- timthumb script -->
@@ -23,6 +23,7 @@
 			<a href="<?php the_permalink(); ?>">Read More &rarr;</a>
 		</div><!-- end porfolio description -->
 	</div>
+	<div class="cinta_room_featured">Featured Room</div>
 	
 </div>		
 

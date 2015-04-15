@@ -4,7 +4,15 @@ Template Name: Home Principal
 */ 
 ?>
 <?php include("header-principal.php"); ?>
+<style>
+  @media only screen and (max-width: 650px){
+  .flex-direction-nav{
+    display: none;
+  }
+}
 
+
+</style>
   <div class="container bg-datos">
     <div class="row bg-datos">
   <div class="small-12 columns datos">
@@ -71,39 +79,29 @@ Template Name: Home Principal
       </div>      
     </div>
     <div class="row">
-  <div class="small-11 small-centered columns">
-    <div class="slider">
-      <ul class="example-orbit" data-orbit>
-        <li>
-          <img class="imgslide" src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/san-isidro.jpg" alt="san isidro">
-            <div class="orbit-caption">
-              COUNTRY CLUB AREA(San Isidro)
-            </div>
-        </li>
-        <li>
-          <img class="imgslide" src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/miraflores.jpg" alt="miraflores">
-            <div class="orbit-caption">
-              MIRAFLORES
-            </div>
-        </li>
-        <li>
-          <img class="imgslide" src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/apartments-suites.jpg" alt="apartments suites">
-            <div class="orbit-caption">
-              APARTMENTS & SUITS
-            </div>
-
-        </li>
-        <li>
-          <img class="imgslide" src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/grand-reserve.jpg" alt="miraflores grand reserve" >
-          <div class="orbit-caption">
-            GRAND RESERVE MIRAFLORES
-          </div>
-        </li>
-       
-      </ul>
+  <div class="small-12 columns">
+    <div class="flex-container">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img  src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/san-isidro.jpg" alt="san isidro">
+          </li>
+          
+          <li>
+            <img  src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/miraflores.jpg" alt="miraflores">
+          </li>
+          
+          <li>
+            <img  src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/apartments-suites.jpg" alt="apartments suites">     
+          </li>
+          <li>
+            <img  src="http://www.casabellaperu.net/wp-content/themes/casaweb/images/slides/home/grand-reserve.jpg" alt="miraflores grand reserve" >
+          </li>
+      </div>
     </div>
   </div>
 </div>
+
     
       <div class="row" style=" padding: 2em; margin-top: 1.5em;">
           
@@ -192,4 +190,16 @@ Template Name: Home Principal
     <script>
       $(document).foundation();
     </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider-min.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('.flexslider').flexslider({
+        animation: 'fade',
+        controlsContainer: '.flexslider'
+      });
+    });
+    </script>
+</body>
 </html>

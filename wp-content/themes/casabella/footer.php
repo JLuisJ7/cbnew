@@ -58,9 +58,10 @@
     
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
   
-    <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jclock.js"></script>
 
@@ -68,7 +69,7 @@
     <script>
       $(document).foundation();
     </script>
-    <script>
+   
  	<?php get_footer(); ?>
 </script>
 </body>

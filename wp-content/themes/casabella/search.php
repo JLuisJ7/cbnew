@@ -19,7 +19,7 @@
 
   <div class="row">
     <div class="small-12 medium-4 large-4 columns panel hide-for-small">
-      <div id="left">
+      <div id="left" class="search_sidebar">
         <div id="left_navigation">
           
       <!-- get the subnavs -->
@@ -29,7 +29,23 @@
         
         <!-- get the search form -->
       
-      
+        <!-- get the search form -->
+        <h2>SEARCH</h2>
+        <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">         
+          <div class="row">
+              <div class="large-12 columns search_content">
+                <div class="row collapse">
+                  <div class="small-8 columns">
+                   <input type="text" value="<?php echo wp_specialchars($s,1); ?>" name="s" id="s"  /> 
+                  </div>
+                  <div class="small-4 columns">
+                  <input type="submit" id="searchsubmit" class="button postfix" value="Search" />
+                   
+                  </div>
+                </div>
+              </div>
+           </div>
+        </form>
         <div id="left_widgets">
         <!-- get the sidebar widgets -->
       
