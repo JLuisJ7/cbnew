@@ -2,3 +2,9 @@
 wp-content/themes/casaweb/
 wp-content/uploads/
 wp-content/themes/casabella/images/rooms/
+es/.htaccess
+es/wp-admin/
+es/wp-includes/
+es/wp-content/uploads/
+es/wp-content/language/
+es/wp-content/plugin/

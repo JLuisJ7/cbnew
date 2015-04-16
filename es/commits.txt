@@ -1,0 +1,59 @@
+commit 1d5105b5d1688008e737491ffef4bc168f560003
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Wed Apr 8 17:19:44 2015 -0500
+
+    fundation.css modificado para el menu
+
+commit c1b8fbb949030acd8e0e9bd330101bbb68229360
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Wed Apr 8 16:59:24 2015 -0500
+
+    page en un 50%
+
+commit 604235444d96e1ccf8d313364988bb5a431f826a
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Wed Apr 8 13:12:04 2015 -0500
+
+    page en un 30%
+
+commit b6c3137c72efe95e45a723cfd3d220a7c8979727
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Tue Apr 7 17:33:58 2015 -0500
+
+    ajustes del header_menu2
+
+commit 85c9d4eea3754a0a1ab54e50880e407ecb247782
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Tue Apr 7 17:19:59 2015 -0500
+
+    cambio de Framework foundation, home terminado
+
+commit 11d21a11173ce9da98e26bed5b92a034c3df0766
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Tue Apr 7 12:02:04 2015 -0500
+
+    barra de navegacion terminado
+
+commit 92a1496ac9fde1ba0c353f5111b3f0c78bd216e6
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Mon Apr 6 16:07:14 2015 -0500
+
+    gitignore agregado
+
+commit 6b7df00601bd90fe248f782761092717cfe7f31c
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Mon Apr 6 16:02:29 2015 -0500
+
+    archivos de wordpress agregados
+
+commit 0e458df115f9208acf8998691d12b0828956de78
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Mon Apr 6 14:54:50 2015 -0500
+
+    home terminado
+
+commit fc17d5e2bfedee841c16e8f95bd488306eae9dd2
+Author: jluisj7 <jluisjab7@gmail.com>
+Date:   Mon Apr 6 11:00:32 2015 -0500
+
+    inicio del Rediseño responsive
