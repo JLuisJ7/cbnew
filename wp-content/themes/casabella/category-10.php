@@ -24,6 +24,7 @@ Template Name: Proyects
 <!-- start loop -->
 <?php query_posts('showposts=8&cat=-'.get_option('featuredcat').','.get_option('portfoliocat').'&paged='.$paged.'&orderby=date&order=asc');
 while (have_posts()) : the_post();
+$urlImagenDes = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
 ?>
 <div class="row portfolio_cell">
   <div class="small-12 large-7 columns">
@@ -38,7 +39,7 @@ while (have_posts()) : the_post();
       <!-- timthumb script -->
       <?php if ( get_post_meta($post->ID, 'thumb', true) ) { ?>
       <div class="postthumb">
-      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img class="image_portfolio_small" src="<?php echo get_post_meta($post->ID, "thumb", $single = true); ?>" alt="<?php the_title(); ?>" width="225" height="150" border="0"/></a>
+      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img class="image_portfolio_small" src="<?php echo $urlImagenDes; ?>" alt="<?php the_title(); ?>" width="225" height="150" border="0"/></a>
       </div>
       <?php } ?>
     </div>

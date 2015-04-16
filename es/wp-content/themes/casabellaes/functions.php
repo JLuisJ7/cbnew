@@ -1,4 +1,6 @@
 <?php 
+//***********Image Featured******************
+add_theme_support( 'post-thumbnails' );
 //***********Custom Menu******************
 add_theme_support( 'nav-menus' );
 

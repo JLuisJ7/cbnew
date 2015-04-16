@@ -730,3 +730,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84D2E8 ', en
 #sitemap_list .post-item a{
   font-size: 12px!important;
 }
+.bd .first-of-type{
+    margin-left: 0!important;
+}

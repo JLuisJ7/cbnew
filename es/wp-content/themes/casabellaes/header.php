@@ -57,19 +57,7 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <?php wp_nav_menu(array('theme_location' => 'menu','menu_id' => 'menu', 'menu_class' => 'eleven columns','container' => '','items_wrap'      => '<ul class="left">%3$s</ul>',)); ?>
-    <ul class="right">      
-      <li class="has-dropdown">
-        <a href="#">Search Hotel</a>
-        <ul class="dropdown">
-          <li>
-              <a href="http://www.casabellaperu.net/miraflores/">Casa Bella San Miraflores</a>
-            </li>
-            <li>
-              <a href="http://www.casabellaperu.net/grand-reserve/">Casa Bella Miraflores Grand Reserve</a>
-            </li>         
-        </ul>
-      </li>
-    </ul>
+    
   </section>
 </nav>
 </div>

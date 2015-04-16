@@ -2,7 +2,9 @@
 <?php query_posts('showposts=1&cat='.get_option('featuredcat')); ?>
 
 <?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
+<?php while (have_posts()) : the_post(); 
+$urlImagenDes = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+?>
 <div class="row portfolio_featured_cell" style="position:relative;">
 	<div class="small-12 large-5 columns">
 		<div class="portfolio_featured_image">					
@@ -10,7 +12,7 @@
 			<?php if ( get_post_meta($post->ID, 'thumb', true) ) { ?>						
 			<div class="postthumb">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<img class="image_portfolio_small" src="<?php echo get_post_meta($post->ID, "thumb", $single = true); ?>" alt="<?php the_title(); ?>" width="225" height="150" border="0"/>
+					<img class="image_portfolio_small" src="<?php echo $urlImagenDes; ?>" alt="<?php the_title(); ?>" width="225" height="150" border="0"/>
 				</a>
 			</div>						
 			<?php } ?>					
@@ -23,7 +25,7 @@
 			<a href="<?php the_permalink(); ?>">Read More &rarr;</a>
 		</div><!-- end porfolio description -->
 	</div>
-	<div class="cinta_room_featured">Featured Room</div>
+	<div class="cinta_room_featured" style="font-size:16px;">Destacado</div>
 	
 </div>		
 

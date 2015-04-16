@@ -276,7 +276,7 @@ padding-top: .8em;
   padding: 0px 0px 5px 0px;
   border-bottom: dotted #ddd 1px;
 }
-.text-content p{
+.text-content p,.text-content div{
   font-size: 12px;
 }
 .text-content ul{
@@ -646,6 +646,9 @@ margin-left:0;
 
   border-bottom: 1px solid black;
 }
+.like_plus{
+  display: none;
+}
 }
 @media only screen and (min-width: 830px){
   .top-bar-section ul li {
@@ -729,4 +732,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84D2E8 ', en
 
 #sitemap_list .post-item a{
   font-size: 12px!important;
+}
+
+.bd .first-of-type{
+    margin-left: 0!important;
 }

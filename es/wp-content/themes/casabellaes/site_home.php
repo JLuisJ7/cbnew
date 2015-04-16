@@ -24,12 +24,28 @@ Template Name: Home Page
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slider.css" type="text/css">
-  
+
+
+ 
 <?php wp_head(); ?>
+
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 <div class="container bg-datos">
     <div class="row bg-datos">
   <div class="small-12 columns datos">
@@ -68,8 +84,19 @@ Template Name: Home Page
     <?php wp_nav_menu(array('theme_location' => 'menu','menu_id' => 'menu', 'menu_class' => 'eleven columns','container' => '','items_wrap'      => '<ul class="left">%3$s</ul>',)); ?>
     
   </section>
+ 
 </nav>
+
 </div>
+<div class="row like_plus">
+	<div class="small-12 columns">
+		<div align="center">
+			<div class="fb-like" data-href="http://www.casabellaperu.net/es/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false" style="line-height: 7px;"></div>
+			<div class="g-plusone" data-size="medium"></div>
+		</div>		
+	</div>
+</div>
+
 
 	
 <div class="row">
@@ -304,7 +331,7 @@ Template Name: Home Page
   
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jclock.js"></script>
+    
 
 
     <script>
@@ -313,6 +340,16 @@ Template Name: Home Page
    
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slider.css" type="text/css">
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jclock.js"></script>
+<script type="text/javascript">
+    $(function($) {
+      var options = {
+        format: '%I:%M:%S %p', // 12-hour with am/pm
+      }
+      $('.jclock').jclock(options);
+    });
+  </script>
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider-min.js"></script>
     <script>
     $(document).ready(function () {

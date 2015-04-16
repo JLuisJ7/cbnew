@@ -296,7 +296,7 @@ Template Name: Home Page
   
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jclock.js"></script>
+
 
 
     <script>
@@ -305,6 +305,15 @@ Template Name: Home Page
    
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jclock.js"></script>
+<script type="text/javascript">
+    $(function($) {
+      var options = {
+        format: '%I:%M:%S %p', // 12-hour with am/pm
+      }
+      $('.jclock').jclock(options);
+    });
+</script>
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider-min.js"></script>
     <script>
     $(document).ready(function () {
