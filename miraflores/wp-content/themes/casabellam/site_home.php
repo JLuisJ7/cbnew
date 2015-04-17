@@ -70,9 +70,9 @@ Template Name: Home Page
       <li class="has-dropdown">
         <a href="#">Search Hotel</a>
         <ul class="dropdown">
-          <li>
-              <a href="http://www.casabellaperu.net/miraflores/">Casa Bella San Miraflores</a>
-            </li>
+          	<li>
+          		<a href="http://www.casabellaperu.net/sanisidro/">Casa Bella San Isidro</a>
+          	</li>
             <li>
               <a href="http://www.casabellaperu.net/grand-reserve/">Casa Bella Miraflores Grand Reserve</a>
             </li>         
@@ -95,16 +95,6 @@ Template Name: Home Page
 					
 					<li>
 						<img src="<?php echo get_option('slide2'); ?>" alt="casa bella hotel" />
-					</li>
-					
-					<li>
-						<img src="<?php echo get_option('slide3'); ?>" alt="rooms" /></li>						
-					</li>
-					<li>
-						<img src="<?php echo get_option('slide4'); ?>" alt="rooms" />
-					</li>
-					<li>
-						<img src="<?php echo get_option('slide5'); ?>" alt="rooms" />
 					</li>
 				</ul>
 			</div>
@@ -139,25 +129,29 @@ Template Name: Home Page
 	</div>
 </div>
 <div class="row site_home_content">
+
 	<div class="small-12  medium-12 large-4 columns">
-		<?php 
-			query_posts('showposts=1&page_id='.get_option('aboutid')); 
-			while (have_posts()) : the_post(); 
-		?>
-		<h5 class="tit_home">
-			<a href="<?php echo get_option('home'); ?>/about-us/"><?php the_title(); ?></a>
-		</h5>
-		<?php $more = 0; the_content("Read More &rarr;");
-		endwhile;
-		?>
-		<p>
-			<a href="<?php echo get_option('home'); ?>/about-us/">Read More &rarr;</a>
-		</p>
-		<div style="text-align:left; font-size:14px; color:#000; margin-bottom:20px;">
-			<p>Local Time: <span class="jclock"></span></p>
+		<?php
+			$args = array(
+				'post_type' => 'page',
+				'posts_per_page' => 1,
+				'page_id' => 1170
+			);
+			$query = new WP_Query( $args );
+			if ( $query->have_posts() ) : ?>
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+			<h5 class="tit_home"><a href="<?php echo get_option('home'); ?>/about-us/"><?php the_title(); ?></a></h5>
+			<?php the_content(); ?>
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+			<?php endif ?>
+
+<p><a href="<?php echo get_option('home'); ?>/about-us/">Read More &rarr;</a></p>
+<div style="text-align:left; font-size:14px; color:#000; margin-bottom:20px;">
+<p>Local Time: <span class="jclock"></span></p>
+</div>
+<a href="http://livechat.boldchat.com/aid/238468884419305815/bc.chat?cwdid=2772812126678393419"><img width="307" height="115" border="0" src="<?php bloginfo('template_directory'); ?>/images/buttoms/livechat.jpg" alt="Live chat"></a>
 		</div>
-		<a href="http://livechat.boldchat.com/aid/238468884419305815/bc.chat?cwdid=2772812126678393419"><img width="307" height="115" border="0" src="<?php bloginfo('template_directory'); ?>/images/buttoms/livechat.jpg" alt="Live chat"></a>
-	</div>
 	<div class="small-12  medium-6 large-4 columns">
 		<?php 
 			query_posts('showposts=1&page_id=397');
@@ -182,40 +176,47 @@ Template Name: Home Page
 		<h5 class="tit_home">
 			<a href="<?php echo get_option('home'); ?>/category/blog/">News &amp; Blog</a>
 		</h5>
-		<ul class="recent_post">
-			<?php query_posts('cat=-'.get_option('portfoliocat').',-'.get_option('featuredcat').'&showposts=5');
-			while (have_posts()) : the_post();?>
-			<li>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</li>
+		<ul>
+			<?php query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => 5 ) );
+			while (have_posts()) : the_post();
+			?>
+			<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
 		</ul>
 	</div>
 	<div class="small-12  medium-6 large-4 columns">
 		<div id="blog_home">
-			<?php query_posts('showposts=1&page_id=956');
+			<?php query_posts('showposts=1&page_id=957');
 			while (have_posts()) : the_post(); ?>
 			<h5 class="tit_home"><a href="<?php echo get_option('home'); ?>/deluxe-condo-suite-apartment/"><?php the_title(); ?></a></h5>
+
 			<?php $more = 0; the_content("Read More &rarr;");
 			endwhile;
 			?>
+
 			<?php query_posts('showposts=1&page_id=462');
 			while (have_posts()) : the_post(); ?>
 			<h5 class="titpro">
-				<a href="http://www.tripadvisor.com/Hotel_Review-g294316-d628608-Reviews-Casa_Bella_B_B_Boutique_Hotel-Lima.html" target="_blank"><?php the_title(); ?></a>
+				<a href="http://www.tripadvisor.com/Hotel_Review-g294316-d628608-Reviews-Casa_Bella_B_B_Boutique_Hotel-Lima.html"><?php the_title(); ?></a>
 			</h5>
 			<?php
 			$more = 0;
 			the_content("Read More &rarr;");
 			endwhile; 
 			?>
-			<h5 class="tit_home"><a href="http://www.casabellaperu.net/gallery/">Photo Tour</a></h5>
-			<?php query_posts('showposts=1&page_id=960');
-			while (have_posts()) : the_post();
-			$more = 0;
-			the_content("Read More &rarr;");
-			endwhile;
+
+			<?php
+				query_posts('showposts=1&page_id=963');
+				while (have_posts()) : the_post(); 
 			?>
+				<h5 class="tit_home"><a href="<?php echo get_option('home'); ?>/gallery/">Photo Tour</a></h5>
+			<?php
+				$more = 0;
+				the_content("Read More &rarr;");
+				endwhile; 
+			?>
+
 			<?php /*?><h5 class="tit_home">Corporate Rates</h5>
 			<?php query_posts('showposts=1&page_id=962');
 			while (have_posts()) : the_post();
@@ -223,10 +224,10 @@ Template Name: Home Page
 			the_content("Read More &rarr;");
 			endwhile; 
 			?><?php */?>
-			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCasa-Bella-Boutique-Hotel%2F117910828286223&amp;width=292&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=true&amp;height=360" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:345px;" allowTransparency="true"></iframe>
+			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCasa-Bella-Boutique-Hotel%2F117910828286223&amp;width=292&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=true&amp;height=360" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:360px;" allowTransparency="true"></iframe>
 			<div id="twitter">
-				<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar(3) ) : else : ?>
-				<?php endif; ?>
+			  <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar(3) ) : else : ?>
+			<?php endif; ?>
 			</div>
 		</div>
 	</div>
@@ -273,7 +274,7 @@ Template Name: Home Page
                 <?php wp_nav_menu(array('theme_location' => 'menu-footer','menu_id' => 'menu', 'menu_class' => 'eleven columns','container' => '','items_wrap'      => '<ul id="menu-footer-navigation" class="menu-footer">%3$s</ul>',)); ?>
             </div>
             <div class="small-12 columns">             
-              <p class="gris font-12 mb_0">Phone: (511) 421-7354 - (511) 421-1033 In USA: (720) 648-3451</p>
+              <p class="gris font-12 mb_0">Phone: +511 241-1446 - +511 241-8825 In USA: (720) 470-7237</p>
             </div>
             <div class="small-12 columns">
               <p class="gris font-12 mb_0">&copy; <?php bloginfo('name'); ?> | Todos los Derechos Reservados.</p>

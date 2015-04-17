@@ -61,8 +61,8 @@
       <li class="has-dropdown">
         <a href="#">Search Hotel</a>
         <ul class="dropdown">
-          <li>
-              <a href="http://www.casabellaperu.net/miraflores/">Casa Bella San Miraflores</a>
+            <li>
+              <a href="http://www.casabellaperu.net/sanisidro/">Casa Bella San Isidro</a>
             </li>
             <li>
               <a href="http://www.casabellaperu.net/grand-reserve/">Casa Bella Miraflores Grand Reserve</a>
